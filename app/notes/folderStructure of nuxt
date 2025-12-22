@@ -1,0 +1,37 @@
+// folder structure of nuxt
+
+.nuxt/: A generated folder used by Nuxt to store build artifacts. Do not edit this manually.
+
+assets/: Contains uncompiled files like SCSS, CSS, and images that you want processed by Vite or Webpack.
+
+public/: Stores static files served at the root URL (e.g., favicon.ico, robots.txt). These are not processed by the build tool.
+
+components/: All Vue components go here. Nuxt auto-imports these, so you can use them in your templates without manual import statements.
+
+pages/: Enables file-system routing. Every .vue file here automatically becomes a URL route.
+
+layouts/: Used for reusable page structures (e.g., a default.vue containing your Navbar and Footer).
+
+server/: Used for backend logic. Subfolders include api/ (for REST endpoints), routes/, and middleware/.
+
+composables/: Dedicated for Vue Composition API functions. Nuxt auto-imports these globally.
+
+middleware/: Contains route guards to run code before navigating to a specific page.
+
+plugins/: Used to run code before the Vue app is instantiated (e.g., initializing an analytics tool).
+
+utils/: For helper functions and utility logic; also benefits from auto-imports.
+
+// Running nuxt app
+
+Development
+
+- `npm run dev`
+
+Cleaning & Fixes
+
+- `npx nuxi clean`
+
+Production
+
+- `npm run build`
