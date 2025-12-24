@@ -6,9 +6,7 @@ const counter = useCount();
   <div>
     Counter:{{ counter }}
     <button @click="counter++">+</button>
-    <button @click="counter++">+</button>
+    <button @click="counter--">-</button>
   </div>
-  <new />
-  <new />
 </template>
 <style lang="css"></style>

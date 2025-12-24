@@ -1,3 +1,3 @@
 <template>
-  <!-- <div><Alert /></div> -->
+  <div><HeroSection /></div>
 </template>
