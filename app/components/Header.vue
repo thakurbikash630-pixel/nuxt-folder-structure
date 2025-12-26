@@ -2,15 +2,23 @@
   <div>
     <nav>
       <ul class="nav-bar">
-        <li><NuxtLink to="/" class="header">Home</NuxtLink></li>
+        <NuxtLink to="/" class="header">Home</NuxtLink>
+
         <li><NuxtLink to="/about" class="header">About</NuxtLink></li>
         <li><NuxtLink to="/contact" class="header">Contact</NuxtLink></li>
-        <li><NuxtLink to="/blog" class="header">Products</NuxtLink></li>
+        <li><NuxtLink to="/products" class="header">Products</NuxtLink></li>
         <div class="search">
           <label for="username"></label>
-          <input type="text" , id="username" placeholder="Search..." />
+          <input
+            class="searchInput"
+            type="text"
+            ,
+            id="username"
+            placeholder="Search..."
+          />
           <MagnifyingGlassIcon class="search-icn" />
         </div>
+        <button>Logout</button>
       </ul>
     </nav>
   </div>
@@ -30,6 +38,7 @@ body {
   color: rgb(38, 2, 88);
   /* width: 30px; */
   font-size: 30px;
+  text-decoration: none;
 }
 .header:hover {
   color: rgb(77, 15, 134);
@@ -46,7 +55,7 @@ li a {
   justify-content: space-around;
 
   padding-left: 30px;
-  padding-right: 18px;
+  padding-right: 6px;
   padding-top: 5px;
   padding-bottom: 5px;
   margin: 0;
@@ -76,7 +85,7 @@ li {
   position: relative;
 }
 
-input {
+.searchInput {
   margin-right: 30px;
   /* padding-right: 30px; */
   height: 30px;
