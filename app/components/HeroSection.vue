@@ -64,6 +64,6 @@ import { useRouter } from "vue-router";
 const router = useRouter();
 
 function goToAbout() {
-  router.push("/about"); // Navigates to /about page
+  router.push("/products"); // Navigates to /about page
 }
 </script>

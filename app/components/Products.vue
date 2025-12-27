@@ -1,6 +1,5 @@
 <script setup lang="ts">
 defineProps<{
-  // id: number;
   name: string;
   price: number;
 
@@ -10,7 +9,6 @@ defineProps<{
 
 <template>
   <div class="Blog">
-    <!-- <p>ID: {{ id }}</p> -->
     <img :src="image" alt="Product image" class="product-img" />
 
     <div class="p-details">

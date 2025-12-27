@@ -15,8 +15,6 @@ const {
   pending,
   error,
 } = await useFetch<Product[]>("https://api.escuelajs.co/api/v1/products");
-
-console.log(products.value);
 </script>
 <template>
   <div class="container">

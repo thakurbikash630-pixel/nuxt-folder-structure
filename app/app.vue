@@ -1,7 +1,8 @@
 <template>
   <div>
     <NuxtLayout>
-      <template v-if="user == null"> <Login /> </template>
+      <!-- <template v-if="user == null"> <Login /> </template> -->
+      <template v-if="user == null"> <Signup /> </template>
       <template v-else="user != null">
         <Header></Header>
         <NuxtPage />

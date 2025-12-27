@@ -1,7 +1,7 @@
 <template>
   <div class="bgimg"></div>
   <div class="login-c">
-    <h2 class="login-title">Login</h2>
+    <h2 class="title">Sign Up</h2>
     <div class="first">
       <p class="n">Name :</p>
       <input
@@ -15,8 +15,17 @@
       <p class="e">Email :</p>
       <input class="enter-e" type="email" placeholder="enter email" />
     </div>
-    <div class="login-wrapper">
-      <button class="btn" @click="loginClick()">login</button>
+    <div class="third">
+      <p class="p">Password :</p>
+      <input
+        class="enter-n"
+        v-model="name"
+        type="text"
+        placeholder="enter name"
+      />
+    </div>
+    <div class="btn-wrapper">
+      <button class="btn-sign" @click="loginClick()">SignIn</button>
     </div>
   </div>
 </template>
@@ -44,7 +53,11 @@ const loginClick = () => {
 .login-c {
   height: fit-content;
   width: 337px;
-  padding: 16px;
+  position: absolute;
+  top: 12rem;
+  left: 33rem;
+  border: 2px solid #ffffff;
+  box-shadow: 0 0 4px 2px rgb(255 67 104);
 }
 .bgimg {
   background-image: url("../assets/loginbg.jpg");
@@ -68,7 +81,24 @@ const loginClick = () => {
   color: #dfdfdf;
   margin-left: 53px;
 }
-
+.third {
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
+}
+.p {
+  width: 105px;
+  font-size: 22px;
+  margin-top: 1px;
+  color: #dfdfdf;
+  margin-left: 26px;
+}
+.title {
+  color: #f1f1f1;
+  margin-left: 101px;
+  font-size: 30px;
+  margin-bottom: 0px;
+}
 .second {
   display: flex;
   flex-direction: row;
@@ -95,27 +125,23 @@ const loginClick = () => {
   margin-top: 4px;
 }
 
-.btn {
+.btn-sign {
   width: 113px;
   height: 41px;
-  font-size: 19px;
+  font-size: 15px;
   font-family: ui-monospace;
   background-color: #ababab;
   color: #000000;
   border-radius: 5px;
 }
-.btn:hover {
+.btn-sign:hover {
   background-color: #929292;
 }
-
-.login-wrapper {
+.btn-wrapper {
   display: flex;
+  flex-direction: row;
+  align-items: center;
   justify-content: center;
-}
-
-.login-title {
-  color: white;
-  display: flex;
-  justify-content: center;
+  width: 100%;
 }
 </style>
