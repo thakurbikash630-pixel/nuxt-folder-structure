@@ -49,7 +49,7 @@
   font-size: 17px;
   font-weight: 600;
   line-height: 22px;
-  color: rgb(30, 30, 30);
+  color: rgb(40 8 84);
 }
 .f-li {
   font-size: 13px;
@@ -59,5 +59,29 @@
 .fb-icn {
   height: 20px;
   width: 20px;
+}
+
+@media (max-width: 500px) {
+  .footer {
+    height: 147px;
+    background-color: rgb(164, 164, 164);
+    display: flex;
+    flex-direction: row;
+    width: 92%;
+    justify-content: center;
+    position: fixed;
+  }
+  .f-ul {
+    padding-top: 0px;
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 16px;
+    color: rgb(40 8 84);
+  }
+  .f-li {
+    font-size: 9px;
+    color: rgb(45, 45, 45);
+    font-weight: 400;
+  }
 }
 </style>

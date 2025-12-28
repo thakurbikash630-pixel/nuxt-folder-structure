@@ -43,7 +43,7 @@ const totalItems = computed(() => shirts.value + pants.value);
   border-radius: 4px;
 }
 .abt {
-  height: 519px;
+  height: 532px;
   margin-left: 100px;
   position: relative;
 }

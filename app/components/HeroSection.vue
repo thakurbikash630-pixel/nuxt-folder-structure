@@ -57,6 +57,17 @@
 .hero-btn:hover {
   background-color: #4f4f4f;
 }
+
+@media (max-width: 500px) {
+  .hero-bg {
+    background-image: url("../assets/images.png");
+    background-size: cover;
+    background-position: center;
+    height: 550px;
+    width: 92%;
+    position: relative;
+  }
+}
 </style>
 <script setup>
 import { useRouter } from "vue-router";

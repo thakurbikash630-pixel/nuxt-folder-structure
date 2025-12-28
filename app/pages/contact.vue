@@ -3,7 +3,7 @@ const counter = useCount();
 </script>
 
 <template>
-  <div>
+  <div class="contact">
     Counter:{{ counter }}
     <button @click="counter++">+</button>
     <button @click="counter++">+</button>
@@ -11,4 +11,8 @@ const counter = useCount();
   <new />
   <new />
 </template>
-<style lang="css"></style>
+<style lang="css">
+.contact {
+  height: 508px;
+}
+</style>

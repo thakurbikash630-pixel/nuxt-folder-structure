@@ -33,6 +33,7 @@ const {
         :image="item.images?.[0] || ''"
       />
     </div>
+    <button>Add to cart</button>
   </div>
 </template>
 

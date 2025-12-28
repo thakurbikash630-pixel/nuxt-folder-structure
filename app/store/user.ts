@@ -1,27 +1,48 @@
 import { defineStore } from "pinia";
 
+interface UserList {
+  name: string;
+  email: string;
+  password: string;
+}
+[];
+
 export const useUserStore = defineStore("user", {
+  //user stores currently logged-in user
+  // initially null (no one logged in)
   state: () => ({
     user: null as {
-      name: string;
       email: string;
+      password: string;
     } | null,
+    userList: [] as any[],
+    // userList stores all registered users
   }),
 
-  //   getters: {
-  //     name: (state: any) => state?.user?.name,
-  //     email: (state: any) => state?.user?.email,
-  //   },
-
   actions: {
-    login(name: string, email: string) {
-      this.user = {
-        name: name,
-        email: email,
-      };
+    login(email: string, password: string) {
+      this.userList.map((item: any) => {
+        debugger;
+        if (item.email == email && item.password == password) {
+          this.user = {
+            email: email,
+            password: password,
+          };
+          navigateTo("/");
+        }
+      });
     },
     logout() {
       this.user = null;
+    },
+
+    addUsertoList(name: string, email: string, password: string) {
+      this.userList.push({
+        name: name,
+        email: email,
+        password: password,
+      });
+      console.log(this.userList);
     },
   },
 });
