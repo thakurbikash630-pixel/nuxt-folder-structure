@@ -1,11 +1,10 @@
 import { defineStore } from "pinia";
 
-interface UserList {
+interface User {
   name: string;
   email: string;
   password: string;
 }
-[];
 
 export const useUserStore = defineStore("user", {
   //user stores currently logged-in user
@@ -15,7 +14,7 @@ export const useUserStore = defineStore("user", {
       email: string;
       password: string;
     } | null,
-    userList: [] as any[],
+    userList: [] as User[],
     // userList stores all registered users
   }),
 

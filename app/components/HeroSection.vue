@@ -63,7 +63,7 @@
     background-image: url("../assets/images.png");
     background-size: cover;
     background-position: center;
-    height: 550px;
+    height: 404px;
     width: 92%;
     position: relative;
   }

@@ -122,7 +122,7 @@ li {
 @media (max-width: 500px) {
   .header {
     color: rgb(38, 2, 88);
-    font-size: 20px;
+    font-size: 16px;
     text-decoration: none;
   }
   .nav-bar {
@@ -130,9 +130,9 @@ li {
     width: 85%;
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: unset;
     font-size: 15px;
-    padding-left: 30px;
+    padding-left: 9px;
     padding-right: 6px;
     padding-top: 15px;
     padding-bottom: 5px;
@@ -144,6 +144,8 @@ li {
   }
   .search-icn {
     display: none;
+  }
+  .btn-logout {
   }
 }
 </style>
